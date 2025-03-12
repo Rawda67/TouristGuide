@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    android:background="@color/BODY"
+    tools:context=".Pyramids1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pyramids_of_giza"
+                android:textColor="@color/heading"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/star"/>
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_9_5"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="19sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <!-- Place Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/pyramid"
+            android:scaleType="centerCrop" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            android:text="@string/the_pyramids_of_giza_are_one_of_the_most_iconic_landmarks_of_ancient_egypt_built_over_4_500_years_ago_during_the_old_kingdom_they_were_constructed_as_tombs_for_pharaohs_with_the_great_pyramid_of_khufu_being_the_largest_these_pyramids_showcase_the_advanced_engineering_and_architectural_skills_of_the_ancient_egyptians_and_remain_one_of_the_seven_wonders_of_the_ancient_world_today_they_are_a_major_tourist_attraction_symbolizing_egypt_s_rich_history_and_civilization"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="italic"
+            android:layout_margin="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:id="@+id/location_map"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/places"
+                android:scaleType="centerCrop"
+                android:contentDescription="Pyramids Location on Map"/>
+            <!-- Google Maps Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/open_map_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/view_on_google_maps"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bg"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:padding="12dp"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="48dp"
+            android:text="Add To Favourit"
+            android:backgroundTint="@color/bg"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+    </LinearLayout>
+</FrameLayout>

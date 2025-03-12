@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Luxor">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/luxortemple1"
+        tools:context=".splash3Screen">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_shape"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.87">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:text="@string/discover_the_majestic_wonder_luxor_temple"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:background="@drawable/rounded_shape"
+                android:backgroundTint="@color/bg"
+                android:textColor="@color/txtcolor"
+                android:alpha="0.8"
+                android:text="@string/an_ancient_egyptian_temple_located_on_the_east_bank_of_the_nile_built_for_the_worship_of_amun_ra_it_is_known_for_its_grand_pylons_statues_and_beautifully_preserved_hieroglyphs"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/rounded_shape"
+                    android:backgroundTint="@color/sandcolor" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/rounded_shape"
+                    android:backgroundTint="@color/sandcolor" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/rounded_shape"
+                    android:backgroundTint="@color/sandcolor" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/sandcolor"
+                android:textColor="@color/black"
+                android:text="@string/explore_more"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

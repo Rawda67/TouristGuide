@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BODY"
+    tools:context=".AbuSimbelTemples">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abu_simbel_temple"
+                android:textColor="@color/heading"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/star"/>
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_8_5"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="19sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <!-- Place Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/abu"
+            android:scaleType="centerCrop" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            android:text="@string/abu_simbel_temple_is_an_ancient_egyptian_masterpiece_built_by_pharaoh_ramses_ii_in_the_13th_century_bce_it_features_two_rock_cut_temples_one_for_ramses_ii_and_another_for_queen_nefertari_the_temple_is_famous_for_its_colossal_statues_and_the_solar_alignment_phenomenon_where_sunlight_illuminates_the_inner_sanctuary_twice_a_year_in_the_1960s_unesco_relocated_it_to_prevent_flooding_from_the_aswan_high_dam_today_it_stands_as_a_symbol_of_egypt_s_rich_history_and_architectural_brilliance"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="italic"
+            android:layout_margin="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:id="@+id/location_map"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/places"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/abu_simbel_temple_location_on_map"/>
+            <!-- Google Maps Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/open_map_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/view_on_google_maps"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bg"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:padding="12dp"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="48dp"
+            android:text="@string/add_to_favorite"
+            android:backgroundTint="@color/bg"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

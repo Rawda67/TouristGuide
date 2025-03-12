@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BODY"
+    tools:context=".Savoy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/savoy_sharm_el_sheikh"
+                android:textColor="@color/heading"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/star"/>
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_8_5"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="19sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <!-- Place Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/savoy"
+            android:scaleType="centerCrop" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            android:text="@string/savoy_sharm_el_sheikh_is_a_5_star_luxury_resort_located_in_soho_square_offering_stunning_beachfront_views_private_beach_access_multiple_pools_and_world_class_dining_options_guests_can_enjoy_snorkeling_scuba_diving_spa_treatments_and_vibrant_nightlife_with_elegant_rooms_exceptional_hospitality_and_a_prime_location_near_sharm_el_sheikh_international_airport_it_s_a_top_rated_destination_for_both_relaxation_and_adventure_rated_4_8_5_it_s_perfect_for_travelers_seeking_luxury_and_entertainment_in_egypt"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="italic"
+            android:layout_margin="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:id="@+id/location_map"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/places"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/abu_simbel_temple_location_on_map"/>
+            <!-- Google Maps Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/open_map_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/view_on_google_maps"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bg"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:padding="12dp"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="48dp"
+            android:text="@string/add_to_favorite"
+            android:backgroundTint="@color/bg"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
